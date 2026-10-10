@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visual Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div>
+            <p class="label">VISUAL ARCHIVE</p>
+            <h1>Image Gallery<span>.</span></h1>
+        </div>
+
+        <p class="description">
+            A small collection of places,
+            landscapes and visual moments.
+        </p>
+
+    </header>
+
+
+    <nav class="filters">
+
+        <button class="filter active" data-filter="All">
+            All
+        </button>
+
+        <button class="filter" data-filter="Nature">
+            Nature
+        </button>
+
+        <button class="filter" data-filter="Architecture">
+            Architecture
+        </button>
+
+        <button class="filter" data-filter="City">
+            City
+        </button>
+
+        <button class="filter" data-filter="Travel">
+            Travel
+        </button>
+
+    </nav>
+
+
+    <main id="gallery" class="gallery"></main>
+
+
+    <!-- Lightbox -->
+
+    <div id="lightbox" class="lightbox">
+
+        <button id="close-btn" class="close-btn">
+            ×
+        </button>
+
+        <button id="prev-btn" class="nav-btn prev">
+            ←
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightbox-image" src="" alt="Gallery image">
+
+            <div class="image-info">
+
+                <div>
+                    <p id="image-category"></p>
+                    <h2 id="image-title"></h2>
+                </div>
+
+                <p id="image-counter">
+                    01 / 06
+                </p>
+
+            </div>
+
+        </div>
+
+        <button id="next-btn" class="nav-btn next">
+            →
+        </button>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 Visual Archive</p>
+        <p>Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
